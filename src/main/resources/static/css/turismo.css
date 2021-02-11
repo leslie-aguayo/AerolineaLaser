@@ -1,0 +1,59 @@
+body{
+    background: url(../img/aviones.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+h6{
+    font-family: garamond;
+    font-size:20;
+}
+
+h2{
+    font-family: garamond;
+    font-size:40;
+}
+
+
+header{
+    height:5em;
+    width: 100%;
+}
+
+.deck{
+    align-content: center;
+    align-items: center;
+}
+
+.flap{
+    align-content: center;
+    align-items: center;  
+}
+
+.bg-vino{
+    background-color:#73102c;
+
+}
+
+
+.icono{
+    width: 8%;
+    float:right;
+}
+
+.centrado{
+    text-align: center; /*texto alineado*/
+    margin-left: 50%;/*margen a la izquierda*/
+    display: flex;  /*horizontal*/
+    justify-content: center;
+}
+
+.navbar-nav{
+    align-items: center;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+
+
+

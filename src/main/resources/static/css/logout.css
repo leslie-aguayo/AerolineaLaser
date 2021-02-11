@@ -1,0 +1,23 @@
+body{
+    background: url(../img/aviones.jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-section{
+    margin:0 auto;
+    margin-top:25%;
+    padding: 0;
+}
+
+.modal-content{
+    background-color: #3b4652;
+    opacity: .85;
+    padding: 0 20px;
+    box-shadow: 0px 0px 3px #848484;
+}
+
+.btn {
+   margin-bottom: 20px;
+   
+}
+

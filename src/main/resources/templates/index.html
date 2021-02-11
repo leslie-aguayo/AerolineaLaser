@@ -1,0 +1,38 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head>
+        <title>Aerolinea LASER</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-COMPATIBLE" content="ie-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="./css/index.css" th:href="@{./css/index.css}">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+        <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    </head>
+    <body>
+        <div class="modal-dialog text-center">
+            <div class="col-sm-10 main-section">
+                <div class="modal-content" style="background-color: #3b4652; opacity: .85;">
+                    <div class="modal-title">
+                        <h1 class="" style="padding: 20px; color: whitesmoke">Bienvenido a Aerolíneas Laser</h1> 
+                    </div>
+                    <br>
+                    <div>
+                    <nav sec:authorize="hasRole('ROLE_ADMIN')" class="nav pb-3">                       
+                        <a class="nav-link btn btn-outline-info" th:href="@{/servicioTurismo}">Servicio Turismo</a>
+                        
+                        <a class="nav-link btn btn-outline-info" style="margin-left: 20px" th:href="@{/servicioPremium}">Servicio Premium</a>                        
+                    </nav>
+                    <a th:href="@{/login}" class="btn btn-primary" hidden="true" style="font-size: 18;"><i class="fas fa-plane"></i> Ingresar </a>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
